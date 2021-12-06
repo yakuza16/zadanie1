@@ -1,0 +1,75 @@
+* {
+  margin: 0 auto;
+  padding: 0 auto;
+  box-sizing: border-box;
+  font-size: inherit;
+}
+
+body {
+  background-image: linear-gradient(
+    to right bottom,
+    #4b5f7c,
+    #40567b,
+    #364d79,
+    #2d4477,
+    #263b74
+  );
+  height: 100vh;
+}
+
+h1 {
+  font-size: 35px;
+  font-family: sans-serif;
+  margin: 20px;
+  padding: 10px;
+}
+.column-wrapper {
+  display: flex;
+}
+
+.column-wrapper > div {
+  text-align: center;
+  font-size: 30px;
+}
+
+.column-wrapper > div p {
+  border: 1px solid rgba(43, 168, 226, 0.287);
+  border-radius: 10px;
+  margin: 15px 0;
+  transition: all 0.3s ease-in-out;
+  font-weight: bold;
+}
+
+.column-wrapper > div p:hover {
+  background-color: #fff;
+  color: rgba(4, 37, 53, 0.911);
+}
+
+button {
+  font-size: 30px;
+  padding: 6px 12px;
+  background-color: #d3d3d336;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border: 3px solid rgb(240, 240, 240);
+  border-radius: 15px;
+  transform: translate(-50%, -50%);
+  transition: all 0.4s ease-in-out;
+  animation: changeColor 5s alternate-reverse infinite;
+  cursor: pointer;
+}
+
+button:hover {
+  /* color: rgba(4, 37, 53, 0.911); */
+  /* background-color: #fff; */
+}
+
+@keyframes changeColor {
+  from {
+    background-color: rgba(4, 37, 53, 0.911);
+  }
+  to {
+    background-color: rgba(43, 168, 226, 0.287);
+  }
+}

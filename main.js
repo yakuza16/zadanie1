@@ -6,11 +6,6 @@ let generated = false;
 
 const columnWrapper = document.querySelector("[data-columnWrapper]");
 const generateNumbersBtn = document.getElementById("random-numbers");
-columnWrapper.style.width = "20%";
-columnWrapper.style.height = "auto";
-columnWrapper.style.margin = "0 auto";
-columnWrapper.style.display = "flex";
-columnWrapper.style.justifyContent = "space-evenly";
 
 const evenNumsColumn = document.createElement("div");
 const headingEvenNums = document.createElement("h1");
