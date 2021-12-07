@@ -18,7 +18,7 @@ body {
 }
 
 h1 {
-  font-size: 35px;
+  font-size: 15px;
   font-family: sans-serif;
   margin: 20px;
   padding: 10px;
@@ -29,7 +29,7 @@ h1 {
 
 .column-wrapper > div {
   text-align: center;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 .column-wrapper > div p {
@@ -46,7 +46,7 @@ h1 {
 }
 
 button {
-  font-size: 30px;
+  font-size: 10px;
   padding: 6px 12px;
   background-color: #d3d3d336;
   position: absolute;
@@ -60,16 +60,26 @@ button {
   cursor: pointer;
 }
 
-button:hover {
-  /* color: rgba(4, 37, 53, 0.911); */
-  /* background-color: #fff; */
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 35px;
+  }
+
+  button {
+    font-size: 35px;
+  }
+  .column-wrapper > div p {
+    font-size: 32px;
+  }
 }
 
 @keyframes changeColor {
   from {
     background-color: rgba(4, 37, 53, 0.911);
+    color: black;
   }
   to {
     background-color: rgba(43, 168, 226, 0.287);
+    color: #fff;
   }
 }
